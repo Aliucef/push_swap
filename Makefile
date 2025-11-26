@@ -6,7 +6,7 @@
 #    By: alyousse <alyousse@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/05 09:14:17 by alyousse          #+#    #+#              #
-#    Updated: 2025/11/26 17:41:02 by alyousse         ###   ########.fr        #
+#    Updated: 2025/11/26 18:35:37 by alyousse         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CFLAGS = -Wall -Wextra -Werror
 LIBFT_DIR = libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
-SRCS = push_swap_parser.c operations.c operations_2.c
+SRCS = push_swap_parser.c operations.c operations_2.c simple_sorting.c
 
 OBJS = $(SRCS:.c=.o)
 

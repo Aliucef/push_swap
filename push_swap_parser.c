@@ -6,13 +6,14 @@
 /*   By: alyousse <alyousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 09:20:51 by alyousse          #+#    #+#             */
-/*   Updated: 2025/11/26 17:52:54 by alyousse         ###   ########.fr       */
+/*   Updated: 2025/11/26 18:36:15 by alyousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "push_swap_operations.h"
 #include <stdio.h>
+#include "sorting_header.h"
 
 static void	fill_stack_a(char *argv, t_list **stack_a)
 {
@@ -100,9 +101,10 @@ int	main(int argc, char *argv[])
 	disorder = compute_disorder(stack_a);
 	printf("this is disorder %f\n", disorder);
 	reverse_rotate(&stack_a);
-	push(&stack_a, &stack_b);
-	push(&stack_a, &stack_b);
+	// push(&stack_a, &stack_b);
+	// push(&stack_a, &stack_b);
 	swap_both(stack_a, stack_b);
+	simple_sort(stack_a);
 	while (stack_a)
 	{
 		ft_printf("stack a : %d\n", stack_a->content);
