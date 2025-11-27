@@ -6,7 +6,7 @@
 /*   By: alyousse <alyousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 09:20:51 by alyousse          #+#    #+#             */
-/*   Updated: 2025/11/26 18:36:15 by alyousse         ###   ########.fr       */
+/*   Updated: 2025/11/27 09:37:29 by alyousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ int	main(int argc, char *argv[])
 	// push(&stack_a, &stack_b);
 	// push(&stack_a, &stack_b);
 	swap_both(stack_a, stack_b);
-	simple_sort(stack_a);
+	selection_sort(&stack_a, &stack_b);
 	while (stack_a)
 	{
 		ft_printf("stack a : %d\n", stack_a->content);

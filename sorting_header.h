@@ -6,7 +6,7 @@
 /*   By: alyousse <alyousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 18:24:29 by alyousse          #+#    #+#             */
-/*   Updated: 2025/11/26 18:47:00 by alyousse         ###   ########.fr       */
+/*   Updated: 2025/11/27 09:36:57 by alyousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,6 @@
 # include "push_swap_operations.h"
 
 void	simple_sort(t_list *stack_a);
+void	selection_sort(t_list **stack_a, t_list **stack_b);
 
 #endif
