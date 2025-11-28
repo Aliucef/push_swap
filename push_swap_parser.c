@@ -6,7 +6,7 @@
 /*   By: alyousse <alyousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 09:20:51 by alyousse          #+#    #+#             */
-/*   Updated: 2025/11/27 09:37:29 by alyousse         ###   ########.fr       */
+/*   Updated: 2025/11/27 12:47:55 by alyousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,20 +97,21 @@ int	main(int argc, char *argv[])
 	stack_a = NULL;
 	if (!check_if_input_valid(argv, argc, &stack_a))
 		return (ft_printf("Error"), 0);
-	ft_printf("hello\n");
+	//ft_printf("hello\n");
 	disorder = compute_disorder(stack_a);
 	printf("this is disorder %f\n", disorder);
-	reverse_rotate(&stack_a);
+	// reverse_rotate(&stack_a);
 	// push(&stack_a, &stack_b);
 	// push(&stack_a, &stack_b);
-	swap_both(stack_a, stack_b);
+	// swap_both(stack_a, stack_b);
+	// simple_sort(stack_a);
 	selection_sort(&stack_a, &stack_b);
 	while (stack_a)
 	{
 		ft_printf("stack a : %d\n", stack_a->content);
 		stack_a = stack_a->next;
 	}
-	ft_printf("\n");
+	//ft_printf("\n");
 	while (stack_b)
 	{
 		ft_printf("stack b : %d\n", stack_b->content);

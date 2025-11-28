@@ -6,7 +6,7 @@
 /*   By: alyousse <alyousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 18:10:44 by alyousse          #+#    #+#             */
-/*   Updated: 2025/11/27 09:45:12 by alyousse         ###   ########.fr       */
+/*   Updated: 2025/11/27 13:13:57 by alyousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ void	simple_sort(t_list *stack_a)
 		stack_a = stack_a->next;
 	}
 	stack_a = temp_head_holder;
-	ft_printf("finished\n");
-	ft_printf("counter :%d\n", counter);
+	//ft_printf("finished\n");
+	//ft_printf("counter :%d\n", counter);
 }
 // selection sort
 int	selection_sort_operation(t_list **stack_a , t_list **stack_b)
@@ -71,14 +71,20 @@ int	selection_sort_operation(t_list **stack_a , t_list **stack_b)
 	{
 		if(which_reverse)
 		{
-			reverse_rotate(stack_a); ft_printf("rra\n"); ops_counter++;
+			reverse_rotate(stack_a);
+			 ft_printf("rra\n");
+			ops_counter++;
 		}
 		else
 		{
-			rotate(stack_a); ft_printf("ra\n"); ops_counter++;
+			rotate(stack_a);
+			ft_printf("ra\n");
+			ops_counter++;
 		}
 	}
-	push(stack_a, stack_b); ft_printf("pa\n"); ops_counter++;
+	push(stack_a, stack_b);
+	ft_printf("pa\n");
+	ops_counter++;
 	return ops_counter;
 }
 
@@ -91,7 +97,9 @@ void	selection_sort(t_list **stack_a, t_list **stack_b)
 	}
 	while (*stack_b)
 	{
-		push(stack_b, stack_a);ft_printf("pb\n"); ops_counter++;
+		push(stack_b, stack_a);
+		ft_printf("pb\n");
+		ops_counter++;
 	}
 	ft_printf("final operations number : %d \n" ,ops_counter++);
 }
